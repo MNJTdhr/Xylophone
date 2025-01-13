@@ -40,28 +40,18 @@ class _MyAppState extends State<MyApp> {
                   child: TextButton(
                     onPressed: () {
                       final player = AudioPlayer();
-                      player.play(AssetSource('audio/my-audio.wav'));
+                      player.setSource(AssetSource('assets/note1.wav'));
                     },
                     child: Text(""),
                   ),
                 ),
               ),
-              Expanded(
-                child: Container(
-                  width: double.infinity,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Colors.indigo, Colors.indigoAccent],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    ),
-                  ),
-                  child: TextButton(
-                    onPressed: () {},
-                    child: Text(""),
-                  ),
-                ),
+              TextButton(
+                onPressed: () {
+                  final player = AudioPlayer();
+                  player.setSource(AssetSource('assets/audio/note1.wav'));
+                },
+                child: Text("v"),
               ),
               Expanded(
                 child: Container(
