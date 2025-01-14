@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,10 +38,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                   ),
                   child: TextButton(
-                    onPressed: () {
-                      final player = AudioCache();
-                      player.play(AssetSource('assets/note1.wav'));
-                    },
+                    onPressed: () {},
                     child: Text(""),
                   ),
                 ),
